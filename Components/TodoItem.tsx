@@ -3,6 +3,9 @@ import React from 'react';
 const TodoItem = ({ text, completed, onClick })
 => {
   return (
+    <div>
+    <input type="text"></input>
+    <button>Add Item</button>
     <li 
     onClick = {onClick}
     style={{ textDecoration : completed ? 
@@ -11,7 +14,7 @@ const TodoItem = ({ text, completed, onClick })
     >
     <div style={{width : "400px" }}>{text}</div>
     </li>
-
+    </div>
   );
 };
 
